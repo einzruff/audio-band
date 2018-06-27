@@ -1,5 +1,8 @@
 # Fork of audio-band from dsafa
 
+No installers of my fork yet. For installers of audio-band go to dsafa's [Release](https://github.com/dsafa/audio-band/releases) page.
+
+For developers:
 Install:
 1. copy release\connectors folder into \debug
 2. create batch file, install.cmd in \debug with contents:
