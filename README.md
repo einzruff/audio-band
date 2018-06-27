@@ -1,3 +1,20 @@
+# Fork of audio-band from dsafa
+
+Install:
+1. copy release\connectors folder into \debug
+2. create batch file, install.cmd in \debug with contents:
+@echo off
+%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /nologo /codebase %~dp0AudioBand.dll
+pause
+
+Uninstall:
+For uninstall, create batch file uninstall.cmd in \debug with contents:
+@echo off
+%SystemRoot%\Microsoft.NET\Framework64\v4.0.30319\regasm.exe /nologo /unregister %~dp0AudioBand.dll
+pause
+
+---
+
 [![Build status](https://ci.appveyor.com/api/projects/status/v32xl29r8uucuwj3?svg=true)](https://ci.appveyor.com/project/dsafa/audio-band)
 
 # Audio Band
@@ -21,7 +38,7 @@ There is currently no installer available, however there are prereleases in the 
 _images here_
 
 ### Current Supported Audio Sources
-- Sotify
+- Spotify
 
 ## Building
 This project uses C# 7 features so a compatible compiler is required.
